@@ -132,8 +132,8 @@ jobs:
       fail-fast: false
       matrix:
         theme: [
-          { fullName: 'material.blue.light.compact', type: 'material', name: 'material.light' },
-          { fullName: 'generic.light.compact', type: 'generic',  name: 'generic.light'},
+          { fullName: 'fluent.saas.light', type: 'fluent', name: 'fluent.saas.light' },
+          { fullName: 'fluent.saas.dark.compact', type: 'fluent',  name: 'fluent.saas.dark.compact'}
         ]
         ARGS: [
           { project: 'angular', page: 'crm-contact-details' },
