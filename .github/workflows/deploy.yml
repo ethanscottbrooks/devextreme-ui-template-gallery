@@ -51,11 +51,6 @@ jobs:
     - name: Run npm install
       run: npm install
 
-    - name: Install Internal Packages
-      uses: DevExpress/github-actions/install-internal-package@main
-      with:
-        install-dist: false
-
     - name: Set theme
       run: npm run set-theme -- ${{ matrix.theme }}
 
@@ -75,51 +70,9 @@ jobs:
         name: build-artifacts
         path: devextreme-ui-template-gallery/
 
-  build-shell:
-    name: Build shell
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Get sources
-      uses: actions/checkout@v4
-
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-
-    - name: Restore npm cache
-      uses: actions/cache@v4
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - name: Run npm install
-      run: npm install
-
-    - name: Install Internal Packages
-      uses: DevExpress/github-actions/install-internal-package@main
-      with:
-        install-dist: false
-
-    - name: Build Shell
-      run: npm run build-shell
-      working-directory: packages/shell
-
-    - name: Copy apps
-      run: npm run copy-shell
-
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: build-artifacts
-        path: devextreme-ui-template-gallery/
-
   deploy:
     name: Deploy
-    needs: [build, build-shell]
+    needs: [build]
     runs-on: ubuntu-latest
 
     steps:
