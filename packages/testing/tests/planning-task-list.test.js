@@ -69,9 +69,9 @@ fixture`Planning List`;
         await t.typeText(inputFields.nth(4), '12/26/2023', { replace: true });
         await t.click(Selector('.dx-toolbar.dx-popup-title')); // to remove focus from input
 
-        if (project === 'react') {
-          await forceResizeRecalculation(t, screenMode);
-        }
+        // if (project === 'react') {
+        //   await forceResizeRecalculation(t, screenMode);
+        // }
 
         await takeScreenshot(`planning-task-add-task-popup${postfix}`, 'body');
         await t.doubleClick(Selector('[aria-label="Save"]'));

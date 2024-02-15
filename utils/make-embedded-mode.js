@@ -24,11 +24,11 @@ const addResizeListener = () => {
     linkSync(listenerPath, applicationListenerPath);
 
     let targetFile = 'main.ts';
-    if (pkg === 'react') {
-      targetFile = 'App.tsx';
-    } else if (pkg === 'vue') {
-      targetFile = 'main.ts';
-    }
+    // if (pkg === 'react') {
+    //   targetFile = 'App.tsx';
+    // } else if (pkg === 'vue') {
+    //   targetFile = 'main.ts';
+    // }
 
     const targetFilePath = join(srcPath, targetFile);
     const targetFileContent = readFileSync(targetFilePath);
@@ -38,8 +38,8 @@ const addResizeListener = () => {
 
 const performReplacements = () => {
   performIndexReplacement(join(rootPath, 'angular', 'src'));
-  performIndexReplacement(join(rootPath, 'react', 'public'));
-  performIndexReplacement(join(rootPath, 'vue', 'public'));
+  // performIndexReplacement(join(rootPath, 'react', 'public'));
+  // performIndexReplacement(join(rootPath, 'vue', 'public'));
 
   addResizeListener();
 };

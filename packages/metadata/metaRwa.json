@@ -10,9 +10,7 @@
                         "Name": "crm-contact-list",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -25,9 +23,7 @@
                         "Name": "crm-contact-details",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -45,9 +41,7 @@
                         "Name": "planning-task-list",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -60,9 +54,7 @@
                         "Name": "planning-task-details",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -75,9 +67,7 @@
                         "Name": "planning-scheduler",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -95,9 +85,7 @@
                         "Name": "analytics-dashboard",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -110,9 +98,7 @@
                         "Name": "analytics-sales-report",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -125,9 +111,7 @@
                         "Name": "analytics-geography",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -145,9 +129,7 @@
                         "Name": "sign-in-form",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -160,9 +142,7 @@
                         "Name": "sign-up-form",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -175,9 +155,7 @@
                         "Name": "reset-password-form",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]
@@ -195,9 +173,7 @@
                         "Name": "user-profile",
                         "DemoType": "Rwa",
                         "AvailableApproaches": [
-                            "Angular",
-                            "React",
-                            "Vue"
+                            "Angular"
                         ]
                     }
                 ]

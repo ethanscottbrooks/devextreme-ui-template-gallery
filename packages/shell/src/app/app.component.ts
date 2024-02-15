@@ -10,7 +10,7 @@ import allThemes from './themes.json';
 export class AppComponent {
   title = 'shell';
 
-  approaches = ['angular', 'react', 'vue'];
+  approaches = ['angular'];
 
   approach = 'angular';
 
@@ -25,7 +25,7 @@ export class AppComponent {
 
   themes = allThemes;
 
-  theme = 'material.blue.light.compact';
+  theme = 'fluent.saas.dark.compact';
 
   approachSelectBoxOptions = {
     items: this.approaches,

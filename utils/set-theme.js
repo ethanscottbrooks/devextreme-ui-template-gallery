@@ -5,20 +5,20 @@ const packages = require('./packages');
 
 const filesForChange = {
   angular: 'angular.json',
-  vue: ['src/theme/styles/theme-dx-dark.scss', 'src/theme/styles/theme-dx-light.scss'],
-  react: ['src/theme/styles/theme-dx-dark.scss', 'src/theme/styles/theme-dx-light.scss'],
+  // vue: ['src/theme/styles/theme-dx-dark.scss', 'src/theme/styles/theme-dx-light.scss'],
+  // react: ['src/theme/styles/theme-dx-dark.scss', 'src/theme/styles/theme-dx-light.scss'],
 };
 
 const variablesPath = {
   angular: 'src/app/theme/styles/variables-mixin.scss',
-  vue: 'src/theme/styles/variables-mixin.scss',
-  react: 'src/theme/styles/variables-mixin.scss',
+  // vue: 'src/theme/styles/variables-mixin.scss',
+  // react: 'src/theme/styles/variables-mixin.scss',
 };
 
 const themeJsFiles = {
   angular: ['src/app/services/theme.service.ts'],
-  vue: ['src/theme/theme-service.ts'],
-  react: ['src/theme/theme.tsx'],
+  // vue: ['src/theme/theme-service.ts'],
+  // react: ['src/theme/theme.tsx'],
 };
 
 const changeThemesMeta = (theme) => {
