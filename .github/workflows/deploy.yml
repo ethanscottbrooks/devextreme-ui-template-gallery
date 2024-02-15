@@ -54,9 +54,9 @@ jobs:
     - name: Set theme
       run: npm run set-theme -- ${{ matrix.theme }}
 
-    - name: Set mode
-      if: ${{ matrix.mode == 'embedded' }}
-      run: npm run make-embedded-mode
+    # - name: Set mode
+    #   if: ${{ matrix.mode == 'embedded' }}
+    #   run: npm run make-embedded-mode
 
     - name: Build
       run: npm run build

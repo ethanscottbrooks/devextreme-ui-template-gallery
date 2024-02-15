@@ -5,8 +5,7 @@
     "build": "npm run build --workspaces --if-present",
     "set-theme": "node utils/set-theme.js",
     "copy-build": "node utils/copy-build.js",
-    "copy-shell": "node utils/copy-shell.js",
-    "make-embedded-mode": "node utils/make-embedded-mode.js",
+    "copy-shell": "node utils/copy-shell.js", 
     "lint-html": "prettier --write . && prettier --check .",
     "lint-js": "eslint .",
     "lint-fix": "prettier --write . && eslint --fix . && stylelint **/*.{css,scss} --fix",
@@ -48,5 +47,6 @@
     "devextreme": "23.2-next",
     "devextreme-dist": "23.2-next"
   },
-  "pre-commit": []
+  "pre-commit": [
+]
 }
