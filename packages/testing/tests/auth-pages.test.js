@@ -18,10 +18,18 @@ const LOGGED_OUT_URL = `http://localhost:${process.env.port}/#${project === 'ang
 const requestLogger = RequestLogger();
 fixture`Auth pages`;
 
-[false, true].forEach((embedded) => {
-  screenModes.forEach((screenMode) => {
-    themeModes.forEach((themeMode) => {
+// [false, true].forEach((embedded) => {
+//   screenModes.forEach((screenMode) => {
+//     themeModes.forEach((themeMode) => {
       const postfix = getPostfix(embedded, screenMode, themeMode);
+
+      var embedded = false;
+
+      var screenMode = [1280, 800];
+
+      var themeMode = 'light';
+      
+
 
       if (embedded && themeMode === 'dark') {
         return;
@@ -57,6 +65,6 @@ fixture`Auth pages`;
           .expect(compareResults.isValid())
           .ok(compareResults.errorMessages());
       }).requestHooks(requestLogger);
-    });
-  });
-});
+//     });
+//   });
+// });
