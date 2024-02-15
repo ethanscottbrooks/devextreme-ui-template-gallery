@@ -23,7 +23,7 @@ const addResizeListener = () => {
     if (existsSync(applicationListenerPath)) unlinkSync(applicationListenerPath);
     linkSync(listenerPath, applicationListenerPath);
 
-    let targetFile = 'main.ts';
+    const targetFile = 'main.ts';
     // if (pkg === 'react') {
     //   targetFile = 'App.tsx';
     // } else if (pkg === 'vue') {
