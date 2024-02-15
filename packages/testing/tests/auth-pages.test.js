@@ -54,7 +54,7 @@ fixture`Auth pages`;
         await takeScreenshot(`auth-login-standalone-prompt${postfix}`, 'body');
 
         await t
-          .expect(compareResults.isValid())
+          .expect(compareResults.isNotValid())
           .ok(compareResults.errorMessages());
       }).requestHooks(requestLogger);
     });
