@@ -25,7 +25,7 @@ export class AppComponent {
 
   themes = allThemes;
 
-  theme = 'fluent.saas.dark.compact';
+  theme = 'fluent.saas.dark';
 
   approachSelectBoxOptions = {
     items: this.approaches,

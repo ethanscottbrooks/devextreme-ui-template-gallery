@@ -45,7 +45,7 @@ jobs:
       matrix:
         theme: [
           { fullName: 'fluent.saas.light', type: 'fluent', name: 'fluent.saas.light' },
-          { fullName: 'fluent.saas.dark.compact', type: 'fluent',  name: 'fluent.saas.dark.compact'}
+          { fullName: 'fluent.saas.dark', type: 'fluent',  name: 'fluent.saas.dark'}
         ]
         ARGS: [
           { project: 'angular', page: 'crm-contact-details' },
