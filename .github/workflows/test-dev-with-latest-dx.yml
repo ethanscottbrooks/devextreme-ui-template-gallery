@@ -246,3 +246,4 @@ jobs:
           name: screenshots-${{ matrix.ARGS.project }}
           path: ${{ github.workspace }}/packages/testing/testing/artifacts/compared-screenshots/*
           if-no-files-found: ignore
+          overwrite: true

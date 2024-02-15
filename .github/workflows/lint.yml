@@ -52,3 +52,4 @@ jobs:
       with:
         name: artifacts
         path: test-results.xml
+        overwrite: true
