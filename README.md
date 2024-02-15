@@ -1,4 +1,4 @@
-# Hello Counsel Client Portal
+# Hello Counsel Client Portal GitHub Push
 
 This repository includes responsive UI Templates for the most popular UI/UX patterns in web LOB applications. These templates are available for Angular, React, and Vue.
 
