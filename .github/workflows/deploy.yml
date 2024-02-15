@@ -54,7 +54,7 @@ jobs:
     - name: Install Internal Packages
       uses: DevExpress/github-actions/install-internal-package@main
       with:
-        install-dist: true
+        install-dist: false
 
     - name: Set theme
       run: npm run set-theme -- ${{ matrix.theme }}
@@ -102,7 +102,7 @@ jobs:
     - name: Install Internal Packages
       uses: DevExpress/github-actions/install-internal-package@main
       with:
-        install-dist: true
+        install-dist: false
 
     - name: Build Shell
       run: npm run build-shell
