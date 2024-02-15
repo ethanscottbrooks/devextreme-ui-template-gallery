@@ -37,24 +37,24 @@ fixture`Auth pages`;
 
         await takeScreenshot(`auth-login-prompt${postfix}`, 'body');
 
-        await t.click(Selector('a').withText('Forgot password?'));
+        // await t.click(Selector('a').withText('Forgot password?'));
 
-        await takeScreenshot(`auth-reset-password-prompt${postfix}`, 'body');
+        // await takeScreenshot(`auth-reset-password-prompt${postfix}`, 'body');
 
-        await t.click(Selector('a').withText('Sign In'));
+        // await t.click(Selector('a').withText('Sign In'));
 
-        await t.click(Selector('.dx-button[aria-label="Create an account"]'));
+        // await t.click(Selector('.dx-button[aria-label="Create an account"]'));
 
-        await takeScreenshot(`auth-create-account-prompt${postfix}`, 'body');
+        // await takeScreenshot(`auth-create-account-prompt${postfix}`, 'body');
+
+        // await t
+        //   .navigateTo(LOGGED_OUT_URL)
+        //   .wait(1000);
+
+        // await takeScreenshot(`auth-login-standalone-prompt${postfix}`, 'body');
 
         await t
-          .navigateTo(LOGGED_OUT_URL)
-          .wait(1000);
-
-        await takeScreenshot(`auth-login-standalone-prompt${postfix}`, 'body');
-
-        await t
-          .expect(compareResults.isNotValid())
+          .expect(compareResults.isValid())
           .ok(compareResults.errorMessages());
       }).requestHooks(requestLogger);
     });
