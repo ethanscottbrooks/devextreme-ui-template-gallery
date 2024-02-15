@@ -31,9 +31,9 @@ fixture`Auth pages`;
       
 
 
-      if (embedded && themeMode === 'dark') {
-        return;
-      }
+      // if (embedded && themeMode === 'dark') {
+      //   return;
+      // }
 
       test(`Auth pages (${project}, embed=${embedded}, ${screenMode[0]}, ${themeMode})`, async (t) => {
         const { takeScreenshot, compareResults } = createScreenshotsComparer(t);
