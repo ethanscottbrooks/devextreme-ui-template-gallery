@@ -48,7 +48,5 @@
     "devextreme": "23.2-next",
     "devextreme-dist": "23.2-next"
   },
-  "pre-commit": [
-    "lint-bundles"
-  ]
+  "pre-commit": []
 }
