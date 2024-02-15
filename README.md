@@ -54,3 +54,4 @@ Navigate to the folders linked below to get the code for each template.
 - [React](packages/react/src/pages/) 
 
 - [Vue](packages/vue/src/pages/)
+
