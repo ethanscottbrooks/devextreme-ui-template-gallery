@@ -55,3 +55,6 @@ Navigate to the folders linked below to get the code for each template.
 
 - [Vue](packages/vue/src/pages/)
 
+## Test Notes
+
+packages\testing> node ./runner.js --project angular --page auth-pages --quarantineMode true  --theme fluent.saas.dark      

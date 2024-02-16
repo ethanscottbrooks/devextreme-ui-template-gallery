@@ -67,9 +67,8 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: build-artifacts-${{ matrix.theme.name }}
+        name: build-artifacts-${{ matrix.theme }}-${{ matrix.theme }}
         path: devextreme-ui-template-gallery/
-        overwrite: true
 
   deploy:
     name: Deploy
