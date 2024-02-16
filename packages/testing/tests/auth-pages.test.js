@@ -21,14 +21,11 @@ fixture`Auth pages`;
 // [false, true].forEach((embedded) => {
 //   screenModes.forEach((screenMode) => {
 //     themeModes.forEach((themeMode) => {
+      const embedded = false;
+      const screenMode = [1280, 800];
+      const themeMode = 'light';      
+
       const postfix = getPostfix(embedded, screenMode, themeMode);
-
-      var embedded = false;
-
-      var screenMode = [1280, 800];
-
-      var themeMode = 'light';
-      
 
 
       // if (embedded && themeMode === 'dark') {
