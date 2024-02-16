@@ -22,14 +22,14 @@ jobs:
         echo "matrix=$themes_json" >> $GITHUB_OUTPUT
   build:
     needs: set-matrix
-    name: Build applications
+    name: Build app
     runs-on: ubuntu-latest
     env:
       CI: false
     strategy:
       matrix:
         theme: ${{fromJson(needs.set-matrix.outputs.matrix)}}
-        mode: [ default, embedded ]
+        mode: [ default ] #, embedded
 
     steps:
     - name: Get sources
@@ -67,7 +67,7 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: build-artifacts-${{ matrix.theme }}-${{ matrix.theme }}
+        name: build-artifacts-${{ matrix.mode }}-${{ matrix.theme }}
         path: devextreme-ui-template-gallery/
 
   deploy:
